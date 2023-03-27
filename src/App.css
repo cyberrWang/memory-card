@@ -1,0 +1,79 @@
+/* header */
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.header {
+  justify-self: start;
+}
+
+.scoreboard {
+  justify-self: end;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .scoreboard {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.75rem;
+    margin-top: 0.5rem;
+    justify-self: center;
+  }
+}
+
+/* cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem 4rem;
+  justify-content: center;
+  justify-items: center;
+  margin: 1.5rem auto;
+}
+
+.card {
+  width: 16rem;
+  height: 22rem;
+  background-color: white;
+  border-radius: 8px;
+  padding-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 60%;
+  height: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 12rem;
+    height: auto;
+  }
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    column-gap: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+

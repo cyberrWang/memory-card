@@ -1,0 +1,49 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.875rem;
+  font-family: 'Alkatra', cursive;
+  background-color: rgb(255, 210, 0);
+}
+
+h2 {
+  font-size: 1.75rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1120px) {
+  body {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+main {
+  margin: 0.5rem auto;
+  width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+}
+
+
